@@ -2,8 +2,8 @@ import knex from "../config/knex";
 
 const requestHandler = (request, reply) => {
   return knex
-    .from("bullets")
-    .where({ deleted: false })
+    .from("bullet")
+    // .where({ deleted: false })
     .select("id", "title", "description", "done", "date")
     .then(results => reply.response(results))
     .catch(err => console.log(err));
