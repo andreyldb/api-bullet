@@ -1,22 +1,16 @@
 exports.up = function(knex, Promise) {
-  return knex.schema.createTable("tasks", function(table) {
+  return knex.schema.createTable("bullet", function(table) {
     // chave primária
-    table.increments("oid");
+    table.increments("id");
 
     // estrutura
-    table.string("title", 50).notNullable();
-    table.string("description", 250).notNullable();
-    table.boolean("deleted");
+    table.string("title", 75).notNullable();
+    table.string("description", 200).notNullable();
     table.boolean("done");
-
-    // timestamp
-    table
-      .timestamp("created_at")
-      .notNullable()
-      .defaultTo(knex.fn.now());
-  });
+    table.date("date").notNullable();
+  })
 };
 
 exports.down = function(knex, Promise) {
-  return knex.schema.dropTableIfExists("tasks");
+  return knex.schema.dropTableIfExists("bullet");
 };
