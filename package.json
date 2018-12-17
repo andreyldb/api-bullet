@@ -1,7 +1,7 @@
 {
   "name": "tarefas-api",
   "version": "0.0.1",
-  "description": "API do App Lista de tarefas",
+  "description": "API da Alê e Andrey",
   "main": "bootstrap.js",
   "engines": {
     "node": "10.11.0"

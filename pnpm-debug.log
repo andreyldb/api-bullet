@@ -1,0 +1,122 @@
+---
+  0 debug pnpm:package-json: 
+    initial: 
+      name: "tarefas-api"
+      version: "0.0.1"
+      description: "API do App Lista de tarefas"
+      main: "bootstrap.js"
+      engines: 
+        node: "10.11.0"
+      scripts: 
+        dev-start: "nodemon bootstrap"
+        start: "node bootstrap"
+        postinstall: "knex migrate:latest && ./node_modules/.bin/knex seed:run"
+      keywords: 
+        - "api"
+        - "todo"
+        - "tarefas"
+        - "hapi"
+      author: 
+        name: "L A MINORA"
+      license: "ISC"
+      dependencies: 
+        babel-core: "^6.26.3"
+        babel-plugin-syntax-async-functions: "^6.13.0"
+        babel-polyfill: "^6.26.0"
+        babel-preset-env: "^1.7.0"
+        hapi: "^17.6.0"
+        hapi-auto-routes: "^1.1.0"
+        knex: "^0.15.2"
+        nodemon: "^1.18.4"
+        sqlite3: "^4.0.2"
+      gitHead: "b198c9895dd21f35a5b9aec29fc7556f966e2cfb"
+      readme: "ERROR: No README data found!"
+      _id: "tarefas-api@0.0.1"
+    prefix: "/home/aluno/tarefas-api"
+  1 info pnpm: 
+    message: "Performing headless installation"
+    prefix: "/home/aluno/tarefas-api"
+  2 debug pnpm:stats: 
+    prefix: "/home/aluno/tarefas-api"
+    removed: 0
+  3 debug pnpm:stage: "importing_started"
+  4 debug pnpm:stats: 
+    added: 0
+    prefix: "/home/aluno/tarefas-api"
+  5 debug pnpm:stage: "importing_done"
+  6 debug pnpm:link: 
+    target: "/home/aluno/tarefas-api/node_modules/.registry.npmjs.org/babel-core/6.26.3/node_modules/babel-core"
+    link: "/home/aluno/tarefas-api/node_modules/babel-core"
+  7 debug pnpm:link: 
+    target: "/home/aluno/tarefas-api/node_modules/.registry.npmjs.org/babel-plugin-syntax-async-functions/6.13.0/node_modules/babel-plugin-syntax-async-functions"
+    link: "/home/aluno/tarefas-api/node_modules/babel-plugin-syntax-async-functions"
+  8 debug pnpm:link: 
+    target: "/home/aluno/tarefas-api/node_modules/.registry.npmjs.org/babel-polyfill/6.26.0/node_modules/babel-polyfill"
+    link: "/home/aluno/tarefas-api/node_modules/babel-polyfill"
+  9 debug pnpm:link: 
+    target: "/home/aluno/tarefas-api/node_modules/.registry.npmjs.org/babel-preset-env/1.7.0/node_modules/babel-preset-env"
+    link: "/home/aluno/tarefas-api/node_modules/babel-preset-env"
+  10 debug pnpm:link: 
+    target: "/home/aluno/tarefas-api/node_modules/.registry.npmjs.org/hapi/17.8.1/node_modules/hapi"
+    link: "/home/aluno/tarefas-api/node_modules/hapi"
+  11 debug pnpm:link: 
+    target: "/home/aluno/tarefas-api/node_modules/.registry.npmjs.org/hapi-auto-routes/1.1.0/node_modules/hapi-auto-routes"
+    link: "/home/aluno/tarefas-api/node_modules/hapi-auto-routes"
+  12 debug pnpm:link: 
+    target: "/home/aluno/tarefas-api/node_modules/.registry.npmjs.org/knex/0.15.2/node_modules/knex"
+    link: "/home/aluno/tarefas-api/node_modules/knex"
+  13 debug pnpm:link: 
+    target: "/home/aluno/tarefas-api/node_modules/.registry.npmjs.org/nodemon/1.18.9/node_modules/nodemon"
+    link: "/home/aluno/tarefas-api/node_modules/nodemon"
+  14 debug pnpm:link: 
+    target: "/home/aluno/tarefas-api/node_modules/.registry.npmjs.org/sqlite3/4.0.4/node_modules/sqlite3"
+    link: "/home/aluno/tarefas-api/node_modules/sqlite3"
+  15 debug pnpm:package-json: 
+    prefix: "/home/aluno/tarefas-api"
+    updated: 
+      name: "tarefas-api"
+      version: "0.0.1"
+      description: "API do App Lista de tarefas"
+      main: "bootstrap.js"
+      engines: 
+        node: "10.11.0"
+      scripts: 
+        dev-start: "nodemon bootstrap"
+        start: "node bootstrap"
+        postinstall: "knex migrate:latest && ./node_modules/.bin/knex seed:run"
+      keywords: 
+        - "api"
+        - "todo"
+        - "tarefas"
+        - "hapi"
+      author: 
+        name: "L A MINORA"
+      license: "ISC"
+      dependencies: 
+        babel-core: "^6.26.3"
+        babel-plugin-syntax-async-functions: "^6.13.0"
+        babel-polyfill: "^6.26.0"
+        babel-preset-env: "^1.7.0"
+        hapi: "^17.6.0"
+        hapi-auto-routes: "^1.1.0"
+        knex: "^0.15.2"
+        nodemon: "^1.18.4"
+        sqlite3: "^4.0.2"
+      gitHead: "b198c9895dd21f35a5b9aec29fc7556f966e2cfb"
+      readme: "ERROR: No README data found!"
+      _id: "tarefas-api@0.0.1"
+  16 debug pnpm:summary: 
+    prefix: "/home/aluno/tarefas-api"
+  17 error pnpm: 
+    message: 
+      errno: 1
+      code: "ELIFECYCLE"
+      pkgid: "tarefas-api@0.0.1"
+      stage: "postinstall"
+      script: "knex migrate:latest && ./node_modules/.bin/knex seed:run"
+      pkgname: "tarefas-api"
+    err: 
+      name: "Error"
+      message: "tarefas-api@0.0.1 postinstall: `knex migrate:latest && ./node_modules/.bin/knex seed:run`\nExit status 1"
+      code: "ELIFECYCLE"
+      stack: "Error: tarefas-api@0.0.1 postinstall: `knex migrate:latest && ./node_modules/.bin/knex seed:run`\nExit status 1\n    at EventEmitter.<anonymous> (/home/aluno/.nvm/versions/node/v10.10.0/lib/node_modules/pnpm/lib/node_modules/@zkochan/npm-lifecycle/index.js:301:16)\n    at EventEmitter.emit (events.js:182:13)\n    at ChildProcess.<anonymous> (/home/aluno/.nvm/versions/node/v10.10.0/lib/node_modules/pnpm/lib/node_modules/@zkochan/npm-lifecycle/lib/spawn.js:55:14)\n    at ChildProcess.emit (events.js:182:13)\n    at maybeClose (internal/child_process.js:962:16)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:251:5)"

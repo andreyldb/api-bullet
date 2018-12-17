@@ -7,7 +7,8 @@ module.exports = {
     connection: {
       filename: "./mydb.sqlite",
       charset: "utf8"
-    }
+    },
+    useNullAsDefault: true
   },
   production: {
     migrations: { tableName: "knex_migrations" },
